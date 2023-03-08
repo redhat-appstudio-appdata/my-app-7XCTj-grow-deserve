@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hello-world-1p2y
+  namespace: psturc-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:2e82dc9b20492cea3547e9b2f312a5e2be94d95e2d977ca312d5e9556e0c9163
+        name: container-image
+        resources: {}
+status: {}
