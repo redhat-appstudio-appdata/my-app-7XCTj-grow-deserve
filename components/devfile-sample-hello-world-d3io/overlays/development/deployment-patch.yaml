@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hello-world-d3io
+  namespace: psturc-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:fd0918fd2de0feb5dfea6ebc9e63e31ea51ca7db99f0a2d700dd9b2fed223058
+        name: container-image
+        resources: {}
+status: {}
