@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: devfile-sample-hello-world-1p2y
     app.kubernetes.io/part-of: my-app
-  name: devfile-sample-hello-worlztha
+  name: devfile-sample-hello-worltkfy
   namespace: psturc-tenant
 spec:
   port:

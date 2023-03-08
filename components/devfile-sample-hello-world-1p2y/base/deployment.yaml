@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-hello-world-1p2y
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:7XCTj-devfile-sample-hello-world-1p2y
+      - image: quay.io/redhat-appstudio/user-workload@sha256:2e82dc9b20492cea3547e9b2f312a5e2be94d95e2d977ca312d5e9556e0c9163
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
