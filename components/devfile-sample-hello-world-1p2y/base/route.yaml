@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-hello-world-1p2y
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-hello-world-1p2y
+    app.kubernetes.io/part-of: my-app
+  name: devfile-sample-hello-worlztha
+  namespace: psturc-tenant
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: devfile-sample-hello-world-1p2y
+    weight: 100
+status: {}
